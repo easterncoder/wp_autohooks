@@ -23,9 +23,9 @@ trait WP_Autohooks {
 	 * Calls this method after creating your object.
 	 */
 	public function auto_hooks() {
-		$class = new ReflectionClass( $this );
+		$class = new \ReflectionClass( $this );
 		// go through each public method in this class.
-		foreach ( $class->getMethods( ReflectionMethod::IS_PUBLIC ) as $method ) {
+		foreach ( $class->getMethods( \ReflectionMethod::IS_PUBLIC ) as $method ) {
 			// get static variables for the method.
 			$statics = $method->getStaticVariables();
 			// look for the $wp_autohooks static variable.
