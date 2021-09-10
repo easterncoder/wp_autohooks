@@ -30,11 +30,11 @@ class Some_Class {
 	}
 	
 	public function my_shortcode() {
-		static $wp_autohooks = array( 'shortcode my_shortcode_name ');
+		static $wp_autohooks = array( 'shortcode my_shortcode_name' );
 	}
 	
 	public function function_with_multiple_actions() {
-		static $wp_autohooks = array( 'action init', 'action shutdown');
+		static $wp_autohooks = array( 'action init', 'action shutdown' );
 	}
 }
 
